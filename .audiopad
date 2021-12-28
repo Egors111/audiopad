@@ -1,0 +1,15 @@
+#!/bin/bash
+# Version with combined microphone and audiopad
+if [ "$1" == "-u" ]; then
+
+pactl unload module module-null-sink
+#pactl combine
+pactl unload module-loopback
+pactl unload module-remap-source
+
+else 
+pactl load-module module-null-sink sink_name=AudioPad_sink
+pactl load-module module-loopback source=alsa_input.pci-0000_00_14.2.analog-stereo.echo-cancel sink=AudioPad_sink
+pactl load-module module-remap-source source_name=AudioPad master=AudioPad_sink.monitor
+fi
+
