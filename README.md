@@ -14,6 +14,10 @@ Once you finished using it, run the same script with -u option, that will remove
 If you want to constantly use AudioPad(as it also conveniently combining microphone with it), just copy the lines that load all the modules to your /etc/pulse/default.pa somewhere. You can also set it as default input.
 
 ### Currently not implemented features
+<<<<<<< HEAD
 - Monitoring of what you are playing 
+=======
+- Monitoring of what you are playing
+>>>>>>> 5f93f585af807b5d0fb72f117b83ba01eb654487
 - "Integrating" with v4l2loopback (Seems to be buggy, at least in discord)
 - Some kind of "chooser", maybe?
