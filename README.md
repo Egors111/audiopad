@@ -15,7 +15,7 @@ If you want to constantly use AudioPad(as it also conveniently combining microph
 
 ### Currently not implemented features
 - Monitoring of what you are playing 
-- "Integrating" with v4l2loopback (Seems to be buggy, at least in discord)
+- "Integrating" with v4l2loopback (Seems to be buggy, at least in discord)  
 You still can use it, just download it(information about it can be found on it's repo on github: https://github.com/umlaeute/v4l2loopback). Then tell the app you use for playing videos to use AudioPad_sink as a sink and the video device created by v4l2loopback(/dev/videoX) as a video stream device. I personally use ffmpeg with following options: ffmpeg -re -i path/to/your/file -f pulse -device AudioPad_sink "AudioPad" -f v4l2 (your /dev/videoX created by v4l2loopback). You can list all video devices using v4l2-ctl --list-devices, select the device where it says "Dummy video device" for your desired program.
 
 Concerning bugs, you would need to turn camera on in the app after you started playing a video, or it will just "loading". Also, you wouldn't be able to play another video unless you restart the program/video sharing. This is true for discord, at least. I dont know how it will behave in other programs, you can test it out yourself. 
