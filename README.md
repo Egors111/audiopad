@@ -6,9 +6,7 @@ _NOTE: .audiopad script use default input for microphone, so if you want to use 
 
 ## Activation and deactivation
 
-If you would use it only sometimes, just run the script once and then you can use it with the path to file that you want to play, it will play it with mpv. Alternatively, you can use it with program of your choice by telling it to use AudioPad_sink as a sink. Also, dont forget to change the input in your desired app to the source created by the script(by default called Remapped Monitor of Null Output.
-
-If you want to use it from time to time, just run the script and you're ready to go. To play something, just tell the program you use for playing video or audio files to use AudioPad_sink as a sink. Commonly, i use mpv with PULSE_SINK=AudioPad_sink option typed before the actual command. Also, don't forget to change input in your desired app to the one created by script(by default called Remapped Monitor of Null Output)
+If you would use it only sometimes, just run the script once and then you can use it with the path to file that you want to play, it will play it with mpv. Alternatively, you can use it with program of your choice by telling it to use AudioPad_sink as a sink. Also, dont forget to change the input in your desired app to the source created by the script(by default called Remapped Monitor of Null Output).
 
 Once you finished using it, run the same script with -u option, that will remove all initialized modules by the script.
 
